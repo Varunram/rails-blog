@@ -8,7 +8,7 @@
 Product.delete_all
 Product.create!(title: 'Harry Potter and the Cursed Child',description: 
     %{<p>
-          Harry Potter and the cursed child is a return t the famous 
+          Harry Potter and the cursed child is a return to the famous 
           series and is the eigth edition in the same. 
       </p>},
     image_url: 'HP.jpg',
@@ -21,7 +21,7 @@ Product.create!(title: 'Percy Jackson: Sword of Summer',description:
     price: 5.12)
 Product.create!(title: 'Goosebumps: The Haunted Mask',description: 
     %{<p>
-          A halloween mask can cause troubles... Or can it?
+          A halloween mask can't cause troubles... Right?
       </p>},
     image_url: 'GJ.jpg',
-    price: 5.00)
+    price: 5.24)

@@ -6,4 +6,7 @@ class Product < ActiveRecord::Base
         with: %r{\.gif|jpg|jpeg|png\Z}i,
         messsage: "Given image must be of Jpeg/Png/Gif fromat only"
         } 
+    def self.latest
+        Product.order(:updated_at).last
+    end
 end

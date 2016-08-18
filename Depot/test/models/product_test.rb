@@ -20,15 +20,15 @@ class ProductTest < ActiveSupport::TestCase
  product.price = 0
  assert products.valid?
  assert_equal["Price cannot be Zero"],
-     product.error[:price]
+     product.errors[:price]
  product.price = 1
  assert product.valid?
  end
  def new product(image_url)
      Product.new{
-         title: "Random1"
-         description: "A random description"
-         image_url: image_url
+         title: "Random1",
+         description: "A random description".
+         image_url: "image_url",
          price: 1.00
          }
  end

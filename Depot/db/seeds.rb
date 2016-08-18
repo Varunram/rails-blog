@@ -13,7 +13,7 @@ Product.create!(title: 'Harry Potter and the Cursed Child',description:
       </p>},
     image_url: 'HP.jpg',
     price: 5.00)
-Product.create!(title: 'Percy Jackson: Sword of Summer',description: 
+Product.create!(title: 'Magnus Chase: Sword of Summer',description: 
     %{<p>
          Rick Riordan returns to the fantasy world with this thriller based on Norse Gods
       </p>},

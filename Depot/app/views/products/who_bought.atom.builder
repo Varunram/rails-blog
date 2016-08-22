@@ -29,7 +29,7 @@ atom_feed do |feed|
      entry.author do |author|
       author.name order.name
       author.email order.email
-     end
+     send
    end
  end
 end

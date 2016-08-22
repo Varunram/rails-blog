@@ -18,7 +18,7 @@ en:
 
   layouts:
     application:
-      title:       "Pragmatic Bookshelf"
+      title:       "Flipkart Bookstore"
       home:        "Home"
       questions:   "Questions"
       news:        "News"
@@ -32,7 +32,7 @@ en:
 
   store:
     index:
-      title_html:  "Your Pragmatic Catalog"
+      title_html:  "Available Products"
       add_html:    "Add to Cart"
 
   orders:

@@ -4,7 +4,7 @@
 <%end%>
   <%= form_tag do%>
     <fieldset>
-        <legend>PLease Login</legend>
+        <legend><%= t('.legend')</legend>
     <div>
         <%=lable_tag :name, 'Name : ' %>
         <%= text_field_tag :name, params[:name] %>        

@@ -8,6 +8,7 @@ class RecipesController < ApplicationController
     end
     def new
         @recipe = Recipe.new
+        #:allow_destroy => true
     end
     def create
         @recipe = Recipe.new(recipe_params)
@@ -28,12 +29,12 @@ class RecipesController < ApplicationController
     end
     def destroy
         @recipe.destroy
-        redirect_to root_path, notice: "SUccessfulyl Deleted Reccipe"
+        redirect_to root_path, notice: "Successfulyl Deleted Reccipe"
     end
     private
 
     def recipe_params
-        params.require(:recipe).permit(:title, :description)
+        params.require(:recipe).permit(:title, :description, ingredients_attributes[:id, :name, :_destroy], directions_attributes[:id, :step, :_destroy])
     end
 
     def find_recipe

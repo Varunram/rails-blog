@@ -77,4 +77,6 @@ Recipes2::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  Paperclip.options[:image_magick_path] = "/Documents/ImageMagick-7.0.1/bin"
+  Paperclip.options[:command_path] = "/Documents/ImageMagick-7.0.1/bin"
 end
